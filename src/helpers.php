@@ -27,11 +27,32 @@ function config(string $key, mixed $default = null): mixed
 }
 
 /**
- * Writable folder for application data. On serverless hosts set STORAGE_PATH to a writable location such as /tmp/storage.
+ * Reads an environment variable whichever way the PHP runtime exposes it.
+ */
+function env(string $key, ?string $default = null): ?string
+{
+    $value = getenv($key);
+    if ($value === false) {
+        $value = $_ENV[$key] ?? $_SERVER[$key] ?? null;
+    }
+
+    return is_string($value) && $value !== '' ? $value : $default;
+}
+
+/**
+ * Writable folder for application data: STORAGE_PATH, else ./storage, else the system temp folder
+ * (serverless hosts such as Vercel only allow writing there).
  */
 function storage_path(string $path = ''): string
 {
-    $base = rtrim(getenv('STORAGE_PATH') ?: BASE_PATH . '/storage', '/');
+    static $base = null;
+
+    if ($base === null) {
+        $local = BASE_PATH . '/storage';
+        $base = env('STORAGE_PATH')
+            ?? ((is_dir($local) && is_writable($local)) || is_writable(BASE_PATH) ? $local : sys_get_temp_dir() . '/aurum');
+        $base = rtrim($base, '/');
+    }
 
     return $path === '' ? $base : $base . '/' . ltrim($path, '/');
 }

@@ -22,14 +22,13 @@ spl_autoload_register(function (string $class): void {
 
 require BASE_PATH . '/src/helpers.php';
 
-if (!is_dir(storage_path('logs'))) {
-    mkdir(storage_path('logs'), 0775, true);
-}
-
 error_reporting(E_ALL);
 ini_set('display_errors', config('app.debug') ? '1' : '0');
 ini_set('log_errors', '1');
-ini_set('error_log', storage_path('logs/php-error.log'));
+
+if (is_dir(storage_path('logs')) || @mkdir(storage_path('logs'), 0775, true)) {
+    ini_set('error_log', storage_path('logs/php-error.log'));
+}
 
 set_error_handler(function (int $severity, string $message, string $file, int $line): bool {
     if (!(error_reporting() & $severity)) {

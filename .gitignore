@@ -4,3 +4,4 @@ RAFY_GOLD_contexte_complet.md
 .DS_Store
 Thumbs.db
 storage/
+config/local.php

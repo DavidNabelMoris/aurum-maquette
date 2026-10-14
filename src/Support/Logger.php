@@ -21,11 +21,6 @@ final class Logger
 
     private static function write(string $channel, string $message, array $context): void
     {
-        $directory = storage_path('logs');
-        if (!is_dir($directory)) {
-            mkdir($directory, 0775, true);
-        }
-
         $line = json_encode([
             'time' => date(DATE_ATOM),
             'ip' => client_ip(),
@@ -34,6 +29,12 @@ final class Logger
             'context' => $context,
         ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
-        file_put_contents("{$directory}/{$channel}.log", $line . PHP_EOL, FILE_APPEND | LOCK_EX);
+        $directory = storage_path('logs');
+        $written = (is_dir($directory) || @mkdir($directory, 0775, true))
+            && @file_put_contents("{$directory}/{$channel}.log", $line . PHP_EOL, FILE_APPEND | LOCK_EX) !== false;
+
+        if (!$written) {
+            error_log("[{$channel}] {$line}");
+        }
     }
 }

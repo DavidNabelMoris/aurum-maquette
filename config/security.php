@@ -2,9 +2,8 @@
 
 return [
     'admin' => [
-        'username' => getenv('ADMIN_USERNAME') ?: 'admin',
-        // The fallback hash is for the local dev server only: anywhere else ADMIN_PASSWORD_HASH must be set.
-        'password_hash' => getenv('ADMIN_PASSWORD_HASH') ?: (PHP_SAPI === 'cli-server' ? '$2y$10$A5yctyQNvIBC1TjrU3obxeFCSYRd8/LIOm71I88Ca1uyXYKzeBSEm' : null),
+        'username' => env('ADMIN_USERNAME') ?? 'admin',
+        'password_hash' => env('ADMIN_PASSWORD_HASH') ?? config('local.admin_password_hash'),
         'idle_timeout' => 1800,
     ],
 

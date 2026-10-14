@@ -3,12 +3,12 @@
 return [
     'name' => 'Aurum',
     'label' => 'Maquette',
-    'url' => getenv('APP_URL') ?: 'http://localhost:8000',
+    'url' => env('APP_URL') ?? 'http://localhost:8000',
     'base_url' => '',
-    'debug' => getenv('APP_DEBUG') === '1',
-    'force_https' => getenv('APP_FORCE_HTTPS') === '1',
-    'trust_proxy' => getenv('TRUST_PROXY') === '1',
-    'demo' => getenv('DEMO_MODE') === '1',
+    'debug' => env('APP_DEBUG') === '1',
+    'force_https' => env('APP_FORCE_HTTPS') === '1',
+    'trust_proxy' => env('TRUST_PROXY') === '1',
+    'demo' => env('DEMO_MODE') === '1',
 
     'contact' => [
         'email' => 'contact@example.com',
@@ -16,7 +16,7 @@ return [
     ],
 
     'analytics' => [
-        'gtm_id' => getenv('GTM_ID') ?: null,
+        'gtm_id' => env('GTM_ID'),
     ],
 
     'vendors' => [

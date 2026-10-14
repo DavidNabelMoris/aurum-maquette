@@ -6,3 +6,4 @@ storage
 .idea
 public/index.php
 public/.htaccess
+config/local.php

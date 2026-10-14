@@ -52,8 +52,8 @@ final class Encrypter
 
     private static function loadKey(): string
     {
-        $fromEnv = getenv('APP_KEY');
-        if ($fromEnv !== false && $fromEnv !== '') {
+        $fromEnv = env('APP_KEY');
+        if ($fromEnv !== null) {
             return base64_decode($fromEnv, true) ?: throw new RuntimeException('APP_KEY must be base64');
         }
 
