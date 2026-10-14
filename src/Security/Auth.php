@@ -36,7 +36,7 @@ final class Auth
         }
 
         $admin = config('security.admin');
-        $knownUser = hash_equals($admin['username'], $username);
+        $knownUser = $admin['password_hash'] !== null && hash_equals($admin['username'], $username);
         $validPassword = password_verify($password, $knownUser ? $admin['password_hash'] : self::DUMMY_HASH);
 
         if (!$knownUser || !$validPassword) {

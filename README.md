@@ -9,9 +9,14 @@ C:\xampp\php\php.exe -S localhost:8000 -t public public/index.php
 ```
 
 - Site : http://localhost:8000
-- Espace pro : http://localhost:8000/admin (identifiant `admin`, mot de passe de démo `aurum-demo-2026`)
+- Espace pro : http://localhost:8000/admin (identifiant `admin`)
 
-En production (Apache), la racine web est `public/` : le fichier `.htaccess` envoie toutes les requêtes vers `index.php`.
+En local, un mot de passe de démonstration est accepté par le serveur de développement. Partout ailleurs, l'espace pro reste fermé tant que `ADMIN_PASSWORD_HASH` n'est pas défini.
+
+## Déploiement
+
+- **Apache** : la racine web est `public/`, le fichier `.htaccess` envoie toutes les requêtes vers `index.php`.
+- **Vercel** : `vercel.json` utilise le runtime communautaire `vercel-php` avec `api/index.php` comme point d'entrée. Définir `DEMO_MODE=1`, `TRUST_PROXY=1`, `STORAGE_PATH=/tmp/aurum`, `APP_KEY`, `APP_URL` et `ADMIN_PASSWORD_HASH`. Le disque y est temporaire : les demandes d'estimation ne sont pas conservées durablement sans base de données.
 
 ## Variables d'environnement
 
