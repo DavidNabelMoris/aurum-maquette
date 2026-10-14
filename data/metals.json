@@ -1,0 +1,17 @@
+{
+  "updated_at": "2026-10-14T09:00:00+02:00",
+  "source": "Données de démonstration",
+  "metals": [
+    {
+      "id": "gold",
+      "name": "Or",
+      "eur_per_kg": 118982.31,
+      "change_pct": 0.18,
+      "usd_per_oz": 4143.62,
+      "history": [3612.4, 3625.1, 3618.9, 3640.2, 3655.7, 3648.3, 3662.8, 3671.5, 3665.2, 3680.4, 3688.9, 3679.6, 3694.1, 3700.76]
+    },
+    { "id": "silver", "name": "Argent", "eur_per_kg": 1681.34, "change_pct": 1.12 },
+    { "id": "platinum", "name": "Platine", "eur_per_kg": 47646.94, "change_pct": -0.37 },
+    { "id": "palladium", "name": "Palladium", "eur_per_kg": 32424.83, "change_pct": -0.92 }
+  ]
+}

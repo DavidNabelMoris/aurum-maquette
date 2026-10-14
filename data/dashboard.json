@@ -1,0 +1,29 @@
+{
+  "kpis": [
+    { "id": "estimations", "label": "Estimations", "value": 1284, "format": "number", "change": 12.4, "period": "depuis le mois dernier", "icon": "file-search", "tone": "red" },
+    { "id": "purchases", "label": "Rachats du mois", "value": 486320, "format": "currency", "change": 5.04, "period": "depuis le mois dernier", "icon": "coins", "tone": "orange" },
+    { "id": "appointments", "label": "RDV à domicile", "value": 214, "format": "number", "change": -3.2, "period": "depuis le mois dernier", "icon": "calendar-check", "tone": "yellow" },
+    { "id": "tours", "label": "Tournées actives", "value": 37, "format": "number", "change": 5.6, "period": "depuis le mois dernier", "icon": "map-pin", "tone": "info" }
+  ],
+  "volume": {
+    "month": {
+      "labels": ["Nov", "Déc", "Janv", "Févr", "Mars", "Avr", "Mai", "Juin", "Juil", "Août", "Sept", "Oct"],
+      "values": [312000, 298000, 355000, 341000, 389000, 402000, 376000, 418000, 395000, 441000, 463000, 486320]
+    },
+    "week": {
+      "labels": ["S35", "S36", "S37", "S38", "S39", "S40", "S41", "S42"],
+      "values": [98000, 104000, 112000, 101000, 117000, 121000, 109000, 126000]
+    }
+  },
+  "transactions": {
+    "labels": ["Mai", "Juin", "Juil", "Août", "Sept", "Oct"],
+    "values": [1120, 1185, 1090, 1240, 1310, 1362]
+  },
+  "requests_by_channel": [
+    { "channel": "Site web", "count": 524, "tone": "primary" },
+    { "channel": "Téléphone", "count": 318, "tone": "info" },
+    { "channel": "Tournées", "count": 236, "tone": "orange" },
+    { "channel": "Agences", "count": 142, "tone": "green" },
+    { "channel": "Kit postal", "count": 64, "tone": "red" }
+  ]
+}

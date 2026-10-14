@@ -1,0 +1,10 @@
+[
+  { "city": "Grenoble", "department": "38", "venue": "Hôtel du Centre", "venue_type": "Hôtel", "date": "2026-10-16", "hours": "9h30 – 17h00", "buyer": "M. Laurent", "status": "confirmed" },
+  { "city": "Chambéry", "department": "73", "venue": "Brasserie de la Gare", "venue_type": "Restaurant", "date": "2026-10-17", "hours": "10h00 – 16h00", "buyer": "Mme Petit", "status": "confirmed" },
+  { "city": "Montélimar", "department": "26", "venue": "Hôtel des Arts", "venue_type": "Hôtel", "date": "2026-10-20", "hours": "9h30 – 17h00", "buyer": "M. Garcia", "status": "pending" },
+  { "city": "Roanne", "department": "42", "venue": "Tabac Presse du Marché", "venue_type": "Bureau de tabac", "date": "2026-10-21", "hours": "9h00 – 13h00", "buyer": "Mme Roux", "status": "confirmed" },
+  { "city": "Vichy", "department": "03", "venue": "Hôtel du Parc", "venue_type": "Hôtel", "date": "2026-10-23", "hours": "9h30 – 17h00", "buyer": "M. Laurent", "status": "pending" },
+  { "city": "Bourg-en-Bresse", "department": "01", "venue": "Le Café des Halles", "venue_type": "Bar", "date": "2026-10-24", "hours": "10h00 – 17h00", "buyer": "Mme Petit", "status": "confirmed" },
+  { "city": "Annecy", "department": "74", "venue": "Hôtel du Lac", "venue_type": "Hôtel", "date": "2026-10-27", "hours": "9h30 – 17h30", "buyer": "M. Garcia", "status": "confirmed" },
+  { "city": "Valence", "department": "26", "venue": "Restaurant Le Saint-Jean", "venue_type": "Restaurant", "date": "2026-10-28", "hours": "10h00 – 16h00", "buyer": "Mme Roux", "status": "confirmed" }
+]

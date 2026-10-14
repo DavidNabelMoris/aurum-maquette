@@ -1,0 +1,40 @@
+{
+  "regions": {
+    "ara": "Auvergne-Rhône-Alpes",
+    "paca": "Provence-Alpes-Côte d'Azur",
+    "occitanie": "Occitanie",
+    "na": "Nouvelle-Aquitaine",
+    "idf": "Île-de-France",
+    "bfc": "Bourgogne-Franche-Comté"
+  },
+  "agencies": [
+    { "city": "Lyon", "department": "69", "region": "ara", "head_office": true },
+    { "city": "Grenoble", "department": "38", "region": "ara" },
+    { "city": "Chambéry", "department": "73", "region": "ara" },
+    { "city": "Albertville", "department": "73", "region": "ara" },
+    { "city": "Aix-les-Bains", "department": "73", "region": "ara" },
+    { "city": "Saint-Étienne", "department": "42", "region": "ara" },
+    { "city": "Roanne", "department": "42", "region": "ara" },
+    { "city": "Montélimar", "department": "26", "region": "ara" },
+    { "city": "Vichy", "department": "03", "region": "ara" },
+    { "city": "Montluçon", "department": "03", "region": "ara" },
+    { "city": "Marseille", "department": "13", "region": "paca" },
+    { "city": "Aix-en-Provence", "department": "13", "region": "paca" },
+    { "city": "La Ciotat", "department": "13", "region": "paca" },
+    { "city": "Toulon", "department": "83", "region": "paca" },
+    { "city": "Nice", "department": "06", "region": "paca" },
+    { "city": "Antibes", "department": "06", "region": "paca" },
+    { "city": "Grasse", "department": "06", "region": "paca" },
+    { "city": "Menton", "department": "06", "region": "paca" },
+    { "city": "Gap", "department": "05", "region": "paca" },
+    { "city": "Carpentras", "department": "84", "region": "paca" },
+    { "city": "Nîmes", "department": "30", "region": "occitanie" },
+    { "city": "Sète", "department": "34", "region": "occitanie" },
+    { "city": "Perpignan", "department": "66", "region": "occitanie" },
+    { "city": "Bordeaux", "department": "33", "region": "na" },
+    { "city": "Biarritz", "department": "64", "region": "na" },
+    { "city": "Agen", "department": "47", "region": "na" },
+    { "city": "Paris", "department": "75", "region": "idf" },
+    { "city": "Mâcon", "department": "71", "region": "bfc" }
+  ]
+}

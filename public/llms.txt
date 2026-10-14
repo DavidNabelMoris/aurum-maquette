@@ -1,0 +1,23 @@
+# Aurum (maquette)
+
+> Rachat d'or et d'argent, d'objets de valeur et change de devises en France, depuis 2011. Siège à Lyon. Site de démonstration : les cours, les tournées et les chiffres sont fictifs.
+
+## Services
+
+- Rachat : bijoux en or (9 à 22 carats), pièces d'or et d'argent, lingots, or dentaire, argenterie, étain, montres (Rolex, Omega, Cartier, Longines, Patek Philippe), sacs de luxe (Hermès, Louis Vuitton, Cartier), diamants, billets de collection.
+- Façons de vendre : tournées (comptoirs temporaires dans des hôtels, bars, restaurants, bureaux de tabac), rendez-vous à domicile, kit d'estimation gratuit par la poste (assuré jusqu'à 5 000 €), 28 agences.
+- Bureau de change : plus de 40 devises. Changeur manuel autorisé par l'ACPR.
+- Investissement : lingots (1 kg à 1 g) et pièces (20 Fr Napoléon, 20 Fr Coq Marianne, 20 Dollars Liberty, 50 Pesos).
+- Estimation gratuite et sans obligation de vente, prix indexé sur le cours des métaux précieux. Paiement par chèque de banque ou virement sous 24 h.
+
+## Pages
+
+- [Accueil](/): services, cours du jour, tournées, agences, formulaire d'estimation
+- [À propos](/a-propos)
+- [Politique de confidentialité](/confidentialite)
+- [Conditions d'utilisation](/cgu)
+- [Mentions légales](/mentions-legales)
+
+## Contact
+
+- Service client : 0805 620 126 (numéro vert), du lundi au jeudi 9h30-19h00, le vendredi 9h30-18h00.

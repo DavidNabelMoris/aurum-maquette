@@ -1,0 +1,134 @@
+{
+  "profile": {
+    "founded": 2011,
+    "headquarters": "Lyon 6e",
+    "regulation": ["Changeur manuel autorisé par l'ACPR", "Agréé Banque de France"],
+    "phone": "0805 620 126",
+    "phone_label": "Numéro vert, appel gratuit",
+    "hours": [
+      { "days": "Lundi au jeudi", "time": "9h30 – 19h00" },
+      { "days": "Vendredi", "time": "9h30 – 18h00" }
+    ]
+  },
+
+  "guarantees": [
+    { "icon": "shield-check", "title": "Agréé ACPR", "text": "Changeur manuel autorisé par l'ACPR et agréé Banque de France." },
+    { "icon": "activity", "title": "Cours garanti", "text": "Nos offres sont indexées sur le cours des métaux précieux, en temps réel." },
+    { "icon": "banknote", "title": "Paiement immédiat", "text": "Chèque de banque ou virement sous 24 h après acceptation de l'offre." },
+    { "icon": "user-check", "title": "Expertise gratuite", "text": "Estimation réalisée sous vos yeux, sans aucune obligation de vente." }
+  ],
+
+  "purchase_categories": [
+    { "icon": "gem", "title": "Bijoux en or", "details": ["9, 14, 18 et 22 carats", "Bijoux plaqués or"] },
+    { "icon": "coins", "title": "Pièces d'or", "details": ["Napoléon 5 à 100 Fr", "Coq Marianne, Génie, Franc Suisse", "20 Dollar Liberty, 50 Pesos"] },
+    { "icon": "sparkle", "title": "Argent", "details": ["Bijoux en argent", "Hercule 10 et 50 Fr, Semeuse 5 Fr", "Turin 10 et 20 Fr, 100 Fr commémorative"] },
+    { "icon": "utensils", "title": "Argenterie et étain", "details": ["Argenterie massive", "Métal argenté", "Objets en étain"] },
+    { "icon": "layers", "title": "Lingots", "details": ["Lingots et lingotins d'or", "Lingots d'argent"] },
+    { "icon": "smile", "title": "Or dentaire", "details": ["Couronnes et bridges en or"] },
+    { "icon": "watch", "title": "Montres", "details": ["Rolex, Omega, Cartier", "Longines, Patek Philippe", "Montres en or et de collection"] },
+    { "icon": "shopping-bag", "title": "Sacs de luxe", "details": ["Hermès", "Louis Vuitton", "Cartier"] },
+    { "icon": "diamond", "title": "Diamants", "details": ["Diamants seuls ou sertis", "Bijoux avec pierres"] },
+    { "icon": "scroll-text", "title": "Billets de collection", "details": ["Billets français et étrangers"] }
+  ],
+
+  "channels": [
+    {
+      "id": "tours",
+      "icon": "map-pin",
+      "label": "Tournées",
+      "title": "Nos acheteurs viennent jusqu'à vous",
+      "text": "L'essence même de notre métier. Toute l'année, nos acheteurs sillonnent la France et installent un comptoir temporaire dans des hôtels, bars, restaurants et bureaux de tabac. L'expertise se fait devant vous.",
+      "steps": ["Repérez une date près de chez vous", "Venez avec vos objets et une pièce d'identité", "Expertise sous vos yeux", "Offre au cours du jour, sans obligation de vente"],
+      "cta": { "label": "Voir les prochaines tournées", "href": "#tournees" }
+    },
+    {
+      "id": "home",
+      "icon": "house",
+      "label": "À domicile",
+      "title": "Un expert chez vous, à toute heure",
+      "text": "Vous préférez rester chez vous ? Nous nous déplaçons à toutes heures, sur rendez-vous, partout en France.",
+      "steps": ["Contact par formulaire ou par téléphone", "Nous vous proposons une date", "Pièce d'identité demandée sur place", "Estimation et offre", "Paiement par chèque ou virement"],
+      "cta": { "label": "Demander un rendez-vous", "href": "#estimation" }
+    },
+    {
+      "id": "kit",
+      "icon": "package",
+      "label": "Kit d'estimation",
+      "title": "Le kit gratuit, envoyé par la poste",
+      "text": "Recevez un kit d'envoi gratuit, glissez-y vos objets et postez-le. L'envoi est assuré jusqu'à 5 000 € et vos frais d'affranchissement sont remboursés.",
+      "steps": ["Demandez le kit en ligne", "Kit reçu sous 48 h", "Ajoutez vos objets, une copie de pièce d'identité et un justificatif de domicile", "Envoi depuis La Poste, assuré jusqu'à 5 000 €", "Expertise et offre", "Paiement sous 24 h après acceptation"],
+      "note": "En cas de refus de l'offre, vos objets vous sont retournés à vos frais.",
+      "cta": { "label": "Recevoir mon kit", "href": "#estimation" }
+    },
+    {
+      "id": "agency",
+      "icon": "store",
+      "label": "En agence",
+      "title": "28 agences pour vous accueillir",
+      "text": "Achat et vente d'or et d'argent, bijoux, objets de luxe et change de devises. Prenez rendez-vous en ligne avec un conseiller spécialisé.",
+      "steps": ["Trouvez l'agence la plus proche", "Prenez rendez-vous en ligne", "Expertise et offre au cours du jour", "Paiement immédiat"],
+      "cta": { "label": "Trouver une agence", "href": "#agences" }
+    }
+  ],
+
+  "exchange": {
+    "currencies": [
+      { "symbol": "$", "label": "Dollar" },
+      { "symbol": "£", "label": "Livre" },
+      { "symbol": "¥", "label": "Yen" },
+      { "symbol": "€", "label": "Euro" }
+    ],
+    "count": "40+"
+  },
+
+  "investment": {
+    "bars": ["Lingot 1 kg", "Lingotins 100 g, 50 g et 10 g", "Jusqu'au lingotin de 1 g"],
+    "coins": ["20 Fr Napoléon", "20 Fr Coq Marianne", "20 Dollars Liberty", "50 Pesos mexicain"]
+  },
+
+  "estimation": [
+    {
+      "id": "gold",
+      "label": "Or",
+      "icon": "gem",
+      "option_label": "Forme et titre",
+      "options": ["Lingot 999/1000", "Bijoux 18 carats", "Bijoux 14 carats", "Bijoux 9 carats", "Or dentaire", "Pièces 900/1000", "Pièces 916/1000", "Pièces 986/1000"],
+      "quantity_label": "Poids approximatif (g)",
+      "quantity_unit": "g"
+    },
+    {
+      "id": "silver",
+      "label": "Argent",
+      "icon": "sparkle",
+      "option_label": "Titre",
+      "options": ["999/1000", "925/1000", "900/1000", "835/1000", "800/1000", "680/1000"],
+      "quantity_label": "Poids approximatif (g)",
+      "quantity_unit": "g"
+    },
+    {
+      "id": "jewels",
+      "label": "Diamants, pierres, bijoux",
+      "icon": "diamond",
+      "option_label": "Type",
+      "options": ["Diamant", "Pierre précieuse", "Bijou avec pierres"],
+      "quantity_label": null
+    },
+    {
+      "id": "luxury",
+      "label": "Sac ou montre de luxe",
+      "icon": "watch",
+      "option_label": "Marque",
+      "options": ["Rolex", "Omega", "Cartier", "Longines", "Patek Philippe", "Hermès", "Louis Vuitton", "Autre marque"],
+      "quantity_label": null
+    },
+    {
+      "id": "currency",
+      "label": "Devises",
+      "icon": "banknote",
+      "option_label": "Devise",
+      "options": ["Dollar américain", "Livre sterling", "Yen", "Autre devise"],
+      "quantity_label": "Montant",
+      "quantity_unit": ""
+    }
+  ]
+}
