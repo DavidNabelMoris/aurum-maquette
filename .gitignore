@@ -5,3 +5,5 @@ RAFY_GOLD_contexte_complet.md
 Thumbs.db
 storage/
 config/local.php
+.env
+.env.*

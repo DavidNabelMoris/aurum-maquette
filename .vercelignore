@@ -7,3 +7,5 @@ storage
 public/index.php
 public/.htaccess
 config/local.php
+.env
+.env.*
